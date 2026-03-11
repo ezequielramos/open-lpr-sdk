@@ -1,8 +1,26 @@
-.DS_Store
-
 plates/
 
 .python-version
 
 *.onnx
 *.pt
+
+# build artifacts
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+
+# binaries
+*.so
+*.a
+*.dylib
+*.o
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
