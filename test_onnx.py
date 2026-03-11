@@ -201,11 +201,10 @@ for image_path in os.listdir('dataset'):
         plate = cv2.resize(plate, (new_w, new_h))
         print(plate.shape)
 
-        cv2.imshow('lixo',plate)
-        cv2.waitKey(0)
-
         ocr_output = ocr_processor(plate)
         print(ocr_output)
-        
 
         cv2.rectangle(image,(x1,y1),(x2,y2),(0,255,0),2)
+
+        cv2.imshow('lixo',image)
+        cv2.waitKey(0)
