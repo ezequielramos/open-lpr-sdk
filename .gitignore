@@ -1,4 +1,6 @@
 plates/
+dataset/
+third_party/
 
 .python-version
 
